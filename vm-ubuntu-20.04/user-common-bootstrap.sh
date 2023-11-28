@@ -16,9 +16,9 @@ sudo ./mininet/util/install.sh -nw
 find /usr/lib /usr/local $HOME/.local | sort > $HOME/usr-local-7-after-mininet-install.txt
 
 #Assignment
-git clone https://github.com/xinjin/course-net-assignment.git
-sudo mv course-net-assignment/assignment4 /home/p4
-sudo chown -R p4:p4 /home/p4/assignment4
+git clone git@github.com:AtheerAlmogbil/Programmable-Networks.git
+sudo mv Programmable-Networks /home/p4
+sudo chown -R p4:p4 /home/p4/Programmable-Networks
 
 #Install firefox
 sudo apt update
