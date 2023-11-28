@@ -9,7 +9,6 @@ knowledge and some familiarity with the P4 language. Please take a look at the
 - *Access Control List* asks you to write a P4 program to implement an ACL on a switch.
 - *Load Balancing* asks you to write a P4 program to implement a simple load balancer on a switch.
 
-**This assignment can be done individually or in groups of 2 students.**
 
 ## Obtaining required software
 
