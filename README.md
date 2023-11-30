@@ -61,7 +61,7 @@ server. In `h2`'s xterm, go to the current exercise folder (`cd exercises/acl`) 
    ```
 4. In `h1`'s xterm, go to the current exercise folder (`cd exercises/acl`) and send a message to `h2`:
    ```bash
-   ./send.py 10.0.1.2 UDP 80 "P4 IS COOL"
+   ./send.py 10.0.2.2 UDP 80 "P4 IS COOL"
    ```
    The command line means `h1` will send a message to `10.0.1.2` with udp.dstport=80.
    The message will be received and displayed in `h2`.
