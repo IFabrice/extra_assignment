@@ -154,7 +154,7 @@ up a switch in Mininet to test its behavior.
    * compile `load_balance.p4`, and
    * start a Mininet instance with one switch (`s1`) connected to four hosts (`h1`, `h2`, `h3` and `h4`).
    * The hosts are assigned IPs of `10.0.1.1`, `10.0.2.2`, `10.0.3.3` and `10.0.4.4`.  
-   * We use the IP address 10.0.1.10 to indicate traffic that should be
+   * We use the IP address 10.0.10.10 to indicate traffic that should be
      load balanced between `h2` and `h3`.
 
 2. You should now see a Mininet command prompt.  Open three terminals
