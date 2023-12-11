@@ -166,7 +166,7 @@ control MyIngress(inout headers hdr,
     table acl_table {
         key = {
             hdr.ipv4.dstAddr: ternary;
-            hdr.upd.dstPort: ternary;
+            hdr.udp.dstPort: ternary;
         }
         actions = {
             drop;
