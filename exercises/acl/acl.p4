@@ -162,9 +162,26 @@ control MyIngress(inout headers hdr,
           when you are using ternary match kinds. (eg. "priority": 100)
      */
 
+
+    table acl_table {
+        key = {
+            hdr.ipv4.dstAddr: ternary;
+            hdr.upd.dstPort: ternary;
+        }
+        actions = {
+            drop;
+            NoAction;
+        }
+        size = 1024;
+        default_action = NoAction();
+    }
+
+
+
     apply {
         if (hdr.ipv4.isValid()) {
             ipv4_lpm.apply();
+            acl_table.apply();
             /* TODO: add your table to the control flow */
 
         }
